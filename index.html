@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>ISDrama</title>
+  <title>ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,24 +20,32 @@
       max-width: 220px;
     }
   </style>
+    <meta name="citation_title" content="ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting">
+    <meta name="citation_author" content="Yu Zhang">
+    <meta name="citation_author" content="Wenxiang Guo">
+    <meta name="citation_author" content="Changhao Pan">
+    <meta name="citation_author" content="Zhiyuan Zhu">
+    <meta name="citation_author" content="Tao Jin">
+    <meta name="citation_author" content="Zhou Zhao">
+    <meta name="citation_conference_title" content="ACM Multimedia 2025">
+  <link rel="stylesheet" href="publication.css">
 </head>
 
 <body>
   <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-    <div class="text-center">
-      <h1>ISDrama</h1>
-      <h3>Immersive Spatial Drama Generation through Multimodal Prompting</h3>
-      <p>
-      
-      |<a
-      href="https://huggingface.co/datasets/AaronZ345/MRSDrama"
-      class="btn border-white bg-white fw-bold"
-      >Open-Source Dataset MRSDrama</a>|<a
-      href="https://github.com/AaronZ345/ISDrama"
-      class="btn border-white bg-white fw-bold"
-      >Evaluation Code</a>|
-      </p>
-    </div>
+    <header class="text-center demo-paper">
+      <h1>ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting</h1>
+      <div class="publication-meta">
+        <p class="publication-venue"><a href="https://acmmm2025.org/">ACM Multimedia 2025</a></p>
+        <p class="publication-authors"><span class="publication-author"><strong><a href="https://aaronz345.github.io/">Yu Zhang</a></strong>,</span> <span class="publication-author">Wenxiang Guo,</span> <span class="publication-author">Changhao Pan,</span> <span class="publication-author">Zhiyuan Zhu,</span> <span class="publication-author">Tao Jin,</span> <span class="publication-author">Zhou Zhao</span></p>
+        <nav class="publication-links" aria-label="Publication resources">
+          <a href="https://doi.org/10.1145/3746027.3755014">Paper</a>
+          <a href="https://arxiv.org/abs/2504.20630">arXiv</a>
+          <a href="https://github.com/AaronZ345/ISDrama">Evaluation Code</a>
+          <a href="https://huggingface.co/datasets/AaronZ345/MRSDrama">MRSDrama Dataset</a>
+        </nav>
+      </div>
+    </header>
     <p>
       <b>Abstract.</b>
 
@@ -113,33 +121,39 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Henry_IV_3/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Henry_IV_3/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
 
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker3:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker3:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Henry_IV_3/Speaker4.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker4:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker4:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Henry_IV_3/Speaker3.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
       
@@ -172,23 +186,28 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Waiting_for_Godot/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Waiting_for_Godot/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          <span>Speaker3:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker3:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Waiting_for_Godot/Speaker3.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
       
@@ -217,33 +236,39 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Troilus_and_Cressida/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Troilus_and_Cressida/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
 
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker3:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker3:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Troilus_and_Cressida/Speaker3.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker4:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker4:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/silent-video/Troilus_and_Cressida/Speaker4.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
       
@@ -289,12 +314,14 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Audio Prompt:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Audio Prompt:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/geometric-pose/Self-accusation/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Script Input
@@ -346,12 +373,14 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Audio Prompt:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Audio Prompt:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/geometric-pose/Measure_for_Measure/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Script Input
@@ -407,12 +436,14 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Audio Prompt:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Audio Prompt:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/geometric-pose/Persian/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Script Input
@@ -465,12 +496,14 @@
           Audio Prompt Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Audio Prompt:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Audio Prompt:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/geometric-pose/Waiting_for_Godot/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <summary style="font-family: 'SimHei', sans-serif; font-size: 1.25em; font-weight: bold;">
           Script Input
@@ -535,18 +568,21 @@
           Prompt Audio Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Offending_the_Audience/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Offending_the_Audience/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
 
@@ -555,7 +591,7 @@
         </summary>
         <br/>
         <div style="display: flex; justify-content: center;">
-          <audio controls controlslist="nodownload" class="px-1">
+          <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Offending_the_Audience/Offending_the_Audience.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
@@ -600,18 +636,21 @@
           Prompt Audio Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Hiroshima_Mon_Amour/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Hiroshima_Mon_Amour/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
         
@@ -620,7 +659,7 @@
         </summary>
         <br/>
         <div style="display: flex; justify-content: center;">
-          <audio controls controlslist="nodownload" class="px-1">
+          <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Hiroshima_Mon_Amour/Hiroshima_Mon_Amour.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
@@ -664,18 +703,21 @@
           Prompt Audio Input
         </summary>
         <br/>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-          <span>Speaker1:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+        <div class="audio-prompts">
+          <div class="audio-prompt">
+            <span>Speaker1:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Waiting_for_Godot/Speaker1.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
-          &nbsp;&nbsp;&nbsp;
-          <span>Speaker2:</span>
-          <audio controls controlslist="nodownload" class="px-1">
+            </audio>
+          </div>
+          <div class="audio-prompt">
+            <span>Speaker2:</span>
+            <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Waiting_for_Godot/Speaker2.wav" type="audio/wav">
             Your browser does not support the audio element.
-          </audio>
+            </audio>
+          </div>
         </div>
         <br/>
       
@@ -684,7 +726,7 @@
         </summary>
         <br/>
         <div style="display: flex; justify-content: center;">
-          <audio controls controlslist="nodownload" class="px-1">
+          <audio preload="none" controls controlslist="nodownload" class="px-1">
             <source src="data/textual-prompt/Waiting_for_Godot/Waiting_for_Godot.wav" type="audio/wav">
             Your browser does not support the audio element.
           </audio>
